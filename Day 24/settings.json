@@ -1,0 +1,9 @@
+{
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "terminal.integrated.inheritEnv": false,
+    "launch": {
+        "configurations": [
+        
+        ]
+    }
+}
