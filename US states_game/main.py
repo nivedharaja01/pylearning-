@@ -23,13 +23,10 @@ while len(guessed_states)<50:
     if answer_state is None:
         break 
     if answer_state == "Exit":
-        missing_states = []
-        for state in all_states:
-            if state not in guessed_states:
-                missing_states.append(state)
+        missing_states = [state for state in all_states if state not in guessed_states]
+        ##lists comphrehension used 
         new_data = pandas.DataFrame(missing_states)
         new_data.to_csv("/Users/nivedhagowtham/Desktop/BA-docs /python_files/day-25-us-states-game-start/states_to_learn.csv")
-
         break
 
     answer_state = answer_state.title()
